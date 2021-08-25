@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './todoapp.css'
-import { BrowserRouter as Link } from 'react-router-dom'
+import './todoapp.css';
+import { Link } from 'react-router-dom';
 import AuthenticationService from './AuthenticationService.js';
-import { withRouter } from 'react-router'
+import { withRouter } from 'react-router';
 
 class HeaderComponent extends Component {
     render() {
@@ -16,7 +16,7 @@ class HeaderComponent extends Component {
                         {isUserLoggedIn && <li><Link className='nav-link' to='/welcome/Rena'>Home</Link></li>}
                         {isUserLoggedIn && <li><Link className='nav-link' to='/todos'>Todos</Link></li>}
                     </ul>
-                    <ul class='navbar-nav navbar-collapse justify-content-end'>
+                    <ul className='navbar-nav navbar-collapse justify-content-end'>
                         {!isUserLoggedIn && <li><Link className='nav-link' to='/login'>Login</Link></li>}
                         {isUserLoggedIn && <li><Link className='nav-link' to='/logout' onClick={AuthenticationService.logout}>Logout</Link></li>}
                     </ul>

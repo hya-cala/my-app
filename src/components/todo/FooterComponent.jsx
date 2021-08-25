@@ -5,7 +5,6 @@ class FooterComponent extends Component {
     render() {
         return (
             <div>
-                <hr />
                 <footer className='footer'>
                     <span className='text-muted'>
                         Copyright

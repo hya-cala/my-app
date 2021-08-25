@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './todoapp.css'
-import { BrowserRouter as Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 class WelcomeComponent extends Component {
     render() {

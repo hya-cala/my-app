@@ -8,6 +8,7 @@ import WelcomeComponent from './WelcomeComponent.jsx'
 import FooterComponent from './FooterComponent.jsx'
 import HeaderComponent from './HeaderComponent.jsx'
 import ListTodoComponent from './ListTodoComponent.jsx'
+import AuthenticationService from './AuthenticationService';
 
 
 class TodoApp extends Component {
@@ -30,7 +31,6 @@ class TodoApp extends Component {
         )
     }
 }
-
 
 function ErrorComponent() {
     return <div>An Error Occurred. Please contact Rena for support. </div>

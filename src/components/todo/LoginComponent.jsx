@@ -31,12 +31,12 @@ class LoginComponent extends Component {
         return (
             <div className='login'>
                 <h1>Login</h1>
-                <div classNmae='container'>
+                <div className='container'>
                     {this.state.hasLoginFailed && <div className='alert alert-warning'>Invalid Credentials</div>}
                     {this.state.showSuccessMessage && <div>Login Successful</div>}
-                    <label for='username'>Username: </label>
+                    <label htmlFor='username'>Username: </label>
                     <input type='text' id='username' name='username' placeholder='Username' value={this.state.username} onChange={this.handleChange} />
-                    <label for='password'>Password: </label>
+                    <label htmlFor='password'>Password: </label>
                     <input type='password' id='password' name='password' placeholder='Password' value={this.state.password} onChange={this.handleChange} />
                     <button className='btn btn-success' onClick={this.loginClicked}>Login</button>
                 </div>
