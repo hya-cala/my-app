@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './todoapp.css'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import AuthenticatedRoute from './AuthenticatedRoute'
 import LoginComponent from './LoginComponent.jsx'
 import LogoutComponent from './LogoutComponent.jsx'
@@ -8,7 +8,6 @@ import WelcomeComponent from './WelcomeComponent.jsx'
 import FooterComponent from './FooterComponent.jsx'
 import HeaderComponent from './HeaderComponent.jsx'
 import ListTodoComponent from './ListTodoComponent.jsx'
-import AuthenticationService from './AuthenticationService';
 
 
 class TodoApp extends Component {
