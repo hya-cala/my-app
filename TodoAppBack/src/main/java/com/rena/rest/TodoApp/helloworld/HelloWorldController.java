@@ -14,12 +14,9 @@ public class HelloWorldController {
 		return "Hello World!";
 	}
 	
-	@GetMapping(path = "/helloworldbean")
-	public HelloWorldBean helloWorldBean() {
-		return new HelloWorldBean("Hello World");
+	@GetMapping(path = "/basicauth")
+	public AuthenticationBean helloWorldBean() {
+		return new AuthenticationBean("Hello World - changed");
 	 }
-	@GetMapping(path = "/helloworld/path-variable/{name}")
-	public HelloWorldBean helloWorldPathVariable(@PathVariable String name) {
-		return new HelloWorldBean(String.format("Hello World, %s", name));
-	}
+
 }

@@ -18,13 +18,18 @@ class LoginComponent extends Component {
         this.setState({ [event.target.name]: event.target.value });
     }
     loginClicked() {
-        if (this.state.username === 'Rena' && this.state.password === '19990309') {
-            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password);
-            this.props.history.push(`/welcome/${this.state.username}`)
-        } else {
-            this.setState({ hasLoginFailed: true });
-            this.setState({ showSuccessMessage: false });
-        }
+        AuthenticationService.executeBasicAuthenticationService(this.state.username, this.state.password)
+            .then(
+                () => {
+                    AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password);
+                    this.props.history.push(`/welcome/${this.state.username}`)
+                }
+            ).catch(
+                () => {
+                    this.setState({ hasLoginFailed: true });
+                    this.setState({ showSuccessMessage: false });
+                }
+            )
     }
 
     render() {

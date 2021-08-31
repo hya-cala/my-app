@@ -1,8 +1,8 @@
 package com.rena.rest.TodoApp.helloworld;
 
-public class HelloWorldBean {
+public class AuthenticationBean {
 	private String message;
-	public HelloWorldBean( String message) {
+	public AuthenticationBean( String message) {
 		this.message = message;
 	}
 	public void setMessage(String message) {
@@ -12,4 +12,9 @@ public class HelloWorldBean {
 	public String getMessage() {
 		return message;
 	}
+	@Override
+	public String toString() {
+		return String.format("HelloWorldBean [message = %s]", message);
+	}
+	
 }
