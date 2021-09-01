@@ -14,8 +14,13 @@ public class HelloWorldController {
 		return "Hello World!";
 	}
 	
+	@GetMapping(path = "/helloworld/path-variable/Rena")
+	public HelloworldBean helloWorldBean() {
+		return new HelloworldBean("Hello World");
+	 }
+	
 	@GetMapping(path = "/basicauth")
-	public AuthenticationBean helloWorldBean() {
+	public AuthenticationBean AuthenBean() {
 		return new AuthenticationBean("Hello World - changed");
 	 }
 
