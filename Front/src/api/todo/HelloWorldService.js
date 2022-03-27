@@ -15,7 +15,7 @@ class HelloWorldService {
 
         // let basicAuthHeader = 'Basic ' + window.btoa(username + ':' + password)
 
-        return axios.get(`http://localhost:8080/basicauth`
+        return axios.get(`http://localhost:8080/helloworld/path-variable/${name}`
             // ,
             // {
             //     headers: {

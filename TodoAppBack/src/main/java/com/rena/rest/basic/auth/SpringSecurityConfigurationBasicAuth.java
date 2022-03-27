@@ -1,4 +1,4 @@
-package com.rena.rest.TodoApp.restfulwebservice.basic.auth;
+package com.rena.rest.basic.auth;
 
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Configuration;

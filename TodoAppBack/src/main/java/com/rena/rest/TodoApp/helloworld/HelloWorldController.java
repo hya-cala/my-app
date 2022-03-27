@@ -16,7 +16,7 @@ public class HelloWorldController {
 	
 	@GetMapping(path = "/helloworld/path-variable/Rena")
 	public HelloworldBean helloWorldBean() {
-		return new HelloworldBean("Hello World");
+		return new HelloworldBean("Hello World, Rena");
 	 }
 	
 	@GetMapping(path = "/basicauth")
